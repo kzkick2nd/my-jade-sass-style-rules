@@ -12,7 +12,7 @@ body.page__some-page.prefix
         h5 Some subtitle
         p Some paragraph
         .some-block__item__child-item
-          a(href="")
+          a(href="") Some anchor
   .another-block
     .another-block__item.js_superb-script.is_active
 ```
@@ -33,8 +33,8 @@ body.page__some-page.prefix
   &__item
     h5
     p
-  &__chile-item
-    a
+    &__child-item
+      a
 
   // ページ個別のスタイル
   .page__some-page &
@@ -50,10 +50,11 @@ body.page__some-page.prefix
 ```
 
 ### 考えていること
-- 管理を考えると、今目に見えているブロックから外に汚染しなければそれでよいという気持ちが強い。
+- 管理を考えると今目に見えているブロックから外に汚染しなければそれでよいという気持ちが強い。
 - Jadeのクラス名に`&セレクター`使えたら何か解決する気はする。
-- 出来上がりのHTML・CSSが冗長ってのが潜在的に気になるが、これはどちらかというとPostCSS的なモノが扱うべき範囲なのでほっておく。GWTで作ったとかいわれるGmailみたいなクラス名処理したい。
+- 出来上がりのHTML・CSSが冗長ってのが潜在的に気になるが、これはどちらかというとPostCSS的なモノが扱うべき範囲なのでほっておく。GWTで作ったとかいわれるGmailみたいなクラス名処理したい。可読性？生のHTMLとCSSで管理したくない。
 - `clearfix`とかよくある共通のモノは`@extend`に追い出す。
-- *ベースレイヤー*で利用されているもの以外、細かい*OOCSS*はやらない。
+- **ベースレイヤー**で利用されているもの以外、細かい**OOCSS**はやらない。
+
 
 2015 kzkiq2nd
