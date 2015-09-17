@@ -69,5 +69,6 @@ body.page__some-page.prefix
 - .btnなどの扱いにはつくづく悩む。.is_btnにした方がいい？
 - BootstrapはBootstrap式書き方にかなり依存するので参考にはすれども使うべき時はすくないという立場
 - [カーゴカルトCSS](http://terkel.github.io/cargo-cult-css/)を正座して読んでまた考える。
+- というか、もはや似たような文法なんだし、SASSとJADEを合わせた新しいテンプレートエンジンがあればいいんじゃ。
 
 2015 kzkiq2nd
